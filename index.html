@@ -24,15 +24,6 @@
   <div class="slide">
     <div class="slideContent">
       <h1 class="mainTitle">Filters</h1>
-      <div class="content"></div>
-      <div class="content">
-        <img class="img--big" src="resources/photosFilter.png"/>
-      </div>
-    </div>
-  </div>
-  <div class="slide">
-    <div class="slideContent">
-      <h1 class="mainTitle">Filters</h1>
       <ul>
         <li>f(x)</li>
       </ul>
@@ -43,6 +34,17 @@
 <span class="code--operation">}</span>
       </pre>
     </code>
+    </div>
+  </div>
+  <div class="slide">
+    <div class="slideContent">
+      <h1 class="mainTitle">Filters</h1>
+      <div class="content">
+        <h2>Apple Photos</h2>
+      </div>
+      <div class="content">
+        <img class="img--big" src="resources/photosFilter.png"/>
+      </div>
     </div>
   </div>
   <div class="slide">
@@ -131,76 +133,81 @@ blur(1px) -> [ 1, 1, 1 ] * [ 10, 20, 20 ] / 9  -> 150/9 -> 17
     </div>
   </div>
   <div class="slide">
-    <div class="slideContent content content--sideBySide">
-      <div class="imageTarget content">
-        <img id="filterdude" class="img--big" src="resources/flower.jpg">
+    <div class="slideContent">
+      <div class="content">
+        <h2>CSS Photos</h2>
       </div>
-      <div class="controls content">
-        <div class="filterGroup">
-          <h2>Light</h2>
-          <form class="filterEdit" oninput="amount.value=inputRange.value">
-            contrast
-            <output name="amount" for="inputRange">100</output>%
-            <input type="range" name="inputRange" class="filterEdit-input" onInput="changeContrast(this.value)"
-              value="100" min="0" max="200" />
-          </form>
-          <form class="filterEdit" oninput="amount.value=inputRange.value">
-            brightness
-            <output name="amount" for="inputRange">100</output>%
-            <input type="range" name="inputRange" class="filterEdit-input" onInput="changeBrightness(this.value)"
-              value="100" min="0" max="200" />
-          </form>
+      
+      <div class="content content--sideBySide">
+        <div class="imageTarget content">
+          <img id="filterdude" class="img--big" src="resources/flower.jpg">
         </div>
-        <div class="filterGroup">
-          <h2>Color</h2>
-          <form class="filterEdit" oninput="amount.value=inputRange.value">
-            sepia
-            <output name="amount" for="inputRange">0</output>%
-            <input type="range" name="inputRange" class="filterEdit-input" onInput="changeSepia(this.value)" value="0"
-              min="0" max="100" />
-          </form>
-          <form class="filterEdit" oninput="amount.value=inputRange.value">
-            invert
-            <output name="amount" for="inputRange">0</output>%
-            <input type="range" name="inputRange" class="filterEdit-input" onInput="changeInvert(this.value)" value="0"
-              min="0" max="100" />
-          </form>
-          <form class="filterEdit" oninput="amount.value=inputRange.value">
-            saturate
-            <output name="amount" for="inputRange">100</output>%
-            <input type="range" name="inputRange" class="filterEdit-input" onInput="changeSaturate(this.value)"
-              value="100" min="0" max="200" />
-          </form>
-          <form class="filterEdit" oninput="amount.value=inputRange.value">
-            rotate hue
-            <output name="amount" for="inputRange">0</output>deg
-            <input type="range" name="inputRange" class="filterEdit-input" onInput="changeHueRotate(this.value)"
-              value="0" min="0" max="360" />
-          </form>
-          <form class="filterEdit" oninput="amount.value=grayscaleRange.value">
-            grayscale
-            <output name="amount" for="grayscaleRange">0</output>%
-            <input type="range" name="grayscaleRange" class="filterEdit-input" onInput="changeGrayscale(this.value)"
-              value="0" min="0" max="100" />
-          </form>
-        </div>
-        <div class="filterGroup">
-          <h2>Extra</h2>
-          <form class="filterEdit" oninput="amount.value=blurRange.value">
-            blur
-            <output name="amount" for="blurRange">0</output>px
-            <input type="range" name="blurRange" class="filterEdit-input" onInput="changeBlur(this.value)" value="0"
-              min="0" max="20" />
-          </form>
-          <form class="filterEdit" oninput="opacityAmount.value=opacityRange.value">
-            opacity
-            <output name="opacityAmount" for="opacityRange">100</output>%
-            <input type="range" name="opacityRange" class="filterEdit-input" onInput="changeOpacity(this.value)"
-              value="100" min="0" max="100" />
-          </form>
+        <div class="controls content">
+          <div class="filterGroup">
+            <h2>Light</h2>
+            <form class="filterEdit" oninput="amount.value=inputRange.value">
+              contrast
+              <output name="amount" for="inputRange">100</output>%
+              <input type="range" name="inputRange" class="filterEdit-input" onInput="changeContrast(this.value)"
+                value="100" min="0" max="200" />
+            </form>
+            <form class="filterEdit" oninput="amount.value=inputRange.value">
+              brightness
+              <output name="amount" for="inputRange">100</output>%
+              <input type="range" name="inputRange" class="filterEdit-input" onInput="changeBrightness(this.value)"
+                value="100" min="0" max="200" />
+            </form>
+          </div>
+          <div class="filterGroup">
+            <h2>Color</h2>
+            <form class="filterEdit" oninput="amount.value=inputRange.value">
+              sepia
+              <output name="amount" for="inputRange">0</output>%
+              <input type="range" name="inputRange" class="filterEdit-input" onInput="changeSepia(this.value)" value="0"
+                min="0" max="100" />
+            </form>
+            <form class="filterEdit" oninput="amount.value=inputRange.value">
+              invert
+              <output name="amount" for="inputRange">0</output>%
+              <input type="range" name="inputRange" class="filterEdit-input" onInput="changeInvert(this.value)" value="0"
+                min="0" max="100" />
+            </form>
+            <form class="filterEdit" oninput="amount.value=inputRange.value">
+              saturate
+              <output name="amount" for="inputRange">100</output>%
+              <input type="range" name="inputRange" class="filterEdit-input" onInput="changeSaturate(this.value)"
+                value="100" min="0" max="200" />
+            </form>
+            <form class="filterEdit" oninput="amount.value=inputRange.value">
+              rotate hue
+              <output name="amount" for="inputRange">0</output>deg
+              <input type="range" name="inputRange" class="filterEdit-input" onInput="changeHueRotate(this.value)"
+                value="0" min="0" max="360" />
+            </form>
+            <form class="filterEdit" oninput="amount.value=grayscaleRange.value">
+              grayscale
+              <output name="amount" for="grayscaleRange">0</output>%
+              <input type="range" name="grayscaleRange" class="filterEdit-input" onInput="changeGrayscale(this.value)"
+                value="0" min="0" max="100" />
+            </form>
+          </div>
+          <div class="filterGroup">
+            <h2>Extra</h2>
+            <form class="filterEdit" oninput="amount.value=blurRange.value">
+              blur
+              <output name="amount" for="blurRange">0</output>px
+              <input type="range" name="blurRange" class="filterEdit-input" onInput="changeBlur(this.value)" value="0"
+                min="0" max="20" />
+            </form>
+            <form class="filterEdit" oninput="opacityAmount.value=opacityRange.value">
+              opacity
+              <output name="opacityAmount" for="opacityRange">100</output>%
+              <input type="range" name="opacityRange" class="filterEdit-input" onInput="changeOpacity(this.value)"
+                value="100" min="0" max="100" />
+            </form>
+          </div>
         </div>
       </div>
-
     </div>
   </div>
   <div class="slide">
