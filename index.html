@@ -24,6 +24,15 @@
   <div class="slide">
     <div class="slideContent">
       <h1 class="mainTitle">Filters</h1>
+      <div class="content"></div>
+      <div class="content">
+        <img class="img--big" src="resources/photosFilter.png"/>
+      </div>
+    </div>
+  </div>
+  <div class="slide">
+    <div class="slideContent">
+      <h1 class="mainTitle">Filters</h1>
       <ul>
         <li>f(x)</li>
       </ul>
@@ -124,7 +133,7 @@ blur(1px) -> [ 1, 1, 1 ] * [ 10, 20, 20 ] / 9  -> 150/9 -> 17
   <div class="slide">
     <div class="slideContent content content--sideBySide">
       <div class="imageTarget content">
-        <img id="filterdude" src="resources/flower.jpg">
+        <img id="filterdude" class="img--big" src="resources/flower.jpg">
       </div>
       <div class="controls content">
         <div class="filterGroup">
@@ -231,15 +240,17 @@ blur(1px) -> [ 1, 1, 1 ] * [ 10, 20, 20 ] / 9  -> 150/9 -> 17
     <div class="slideContent">
       <h2>Fun with filters</h2>
       <div class="content">
-        Minimum non-viable darkmode
+        Minimum non-viable darkmode-product
       </div>
-      <div class="content">
+      <div class="content content--sideBySide">
         <code><pre><span class="code--componentName">body</span> <span class="code--operation">{</span>
   <span class="code--prop">filter</span><span class="code--operation">:</span> <span class="code--propName">invert()</span><span class="code--operation">;</span>
 <span class="code--operation">}</span>
 <span class="code--componentName">img</span> <span class="code--operation">{</span>
   <span class="code--prop">filter</span><span class="code--operation">:</span> <span class="code--propName">invert()</span><span class="code--operation">;</span>
 <span class="code--operation">}</span></pre></code>
+        <img src="resources/Basic.png" class="giveMeSomeRoom"/>
+        <img src="resources/FilterDark.png" >
       </div>
   </div></div>
   <div class="slide">
@@ -330,6 +341,17 @@ blur(1px) -> [ 1, 1, 1 ] * [ 10, 20, 20 ] / 9  -> 150/9 -> 17
       <div class="blend cloudyContainer">
         <img src="resources/clouds2.jpg" class="cloudy">
         <img src="resources/bandet.jpg" class="cloudyValley">
+      </div>
+    </div>
+  </div>
+  <div class="slide">
+    <div class="slideContent">
+      <h1 class="mainTitle blendDemo--title">Thank you</h1>
+    
+      <div class="content">
+        Sources:
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter">Filters</a></p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/blend-mode">Blend Modes</a></p>
       </div>
     </div>
   </div>
